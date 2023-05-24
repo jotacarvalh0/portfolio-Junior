@@ -1,0 +1,43 @@
+.header
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .photo
+        width: 200px
+        height: 200px
+
+    .title
+        text-align: center
+        
+    .information
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+        p
+            margin: .5rem
+            font-size: 1.125rem
+
+        p::before
+            content: ''
+            display: inline-block
+            width: 1rem
+            height: 1rem
+            background-image: url('/assets/img/icons/job.svg')
+            background-repeat: no-repeat
+            background-size: contain
+            margin-right: .5rem
+        
+        .job::before
+            background-image: url('/assets/img/icons/job.svg')
+
+        .location::before
+            background-image: url('/assets/img/icons/localizacao.svg')
+
+        .email::before
+            background-image: url('/assets/img/icons/gmail.svg')
+
+        .phone::before
+            background-image: url('/assets/img/icons/whatsapp.svg')

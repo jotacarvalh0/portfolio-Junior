@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .photo {
+  width: 200px;
+  height: 200px;
+}
+.header .title {
+  text-align: center;
+}
+.header .information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header .information p {
+  margin: 0.5rem;
+  font-size: 1.125rem;
+}
+.header .information p::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url("/assets/img/icons/job.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+.header .information .job::before {
+  background-image: url("/assets/img/icons/job.svg");
+}
+.header .information .location::before {
+  background-image: url("/assets/img/icons/localizacao.svg");
+}
+.header .information .email::before {
+  background-image: url("/assets/img/icons/gmail.svg");
+}
+.header .information .phone::before {
+  background-image: url("/assets/img/icons/whatsapp.svg");
+}/*# sourceMappingURL=header.css.map */
